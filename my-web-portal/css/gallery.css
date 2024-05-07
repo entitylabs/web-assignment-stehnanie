@@ -1,0 +1,44 @@
+body {
+
+    background: linear-gradient(to top, rgba(205, 27, 26, 0.4), rgba(205, 27, 26, 0.7)), url('../resources/gallery.jpg') top center;
+    background-size: 100% 100%;
+
+}
+
+.gallery-container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+
+    background-color: white;
+    width: 18rem;
+    text-overflow: hidden;
+    height: 20rem;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.title {
+    color: grey;
+    font-size: 1.25rem;
+}
+
+.card-image {
+    width: 100%;
+    max-height: 12rem;
+}
+
+.card-text {
+
+    text-overflow: ellipsis;
+    padding: 0.5rem;
+    max-lines: 4;
+}

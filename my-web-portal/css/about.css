@@ -1,0 +1,28 @@
+#about-me {
+
+    margin: 0.25rem;
+    padding: 2rem;
+    max-height: 40rem;
+    text-transform: capitalize;
+    text-indent: 1rem;
+    background-color: white;
+
+}
+
+p[class="first"]::first-letter{
+    font-size: 2rem;
+    color: red;
+}
+
+#about-image {
+
+    margin: 0.25rem;
+    min-width: 25rem;
+    width:2rem;
+
+}
+
+#about-image, #about-me {
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
