@@ -24,11 +24,13 @@ body {
     text-align: center;
     overflow: hidden;
     padding-bottom: 1rem;
+    
 }
 
 .title {
     color: grey;
     font-size: 1.25rem;
+    padding: 0.25rem;
 }
 
 .card-image {
