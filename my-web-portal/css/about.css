@@ -1,3 +1,10 @@
+body {
+
+    background: linear-gradient(to top, rgba(205, 27, 26, 0.4), rgba(205, 27, 26, 0.7)), url('../resources/about_background.jpg') top center;
+    background-size: 100% 100%;
+
+}
+
 #about-me {
 
     margin: 0.25rem;
