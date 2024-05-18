@@ -1,5 +1,5 @@
 body {
-    background-image: url("../resources/background.jpg");
+    background-image: url("../resources/images/background.jpg");
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -10,3 +10,16 @@ body {
     justify-content: right;
     text-align: right;
 }
+
+#home-label{
+
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: red 1px 0 10px;
+    padding: 10rem;
+    font-family: "Sofia", sans-serif;
+    max-width: 30rem;
+    text-transform: capitalize;
+
+   }

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Home",
+        "url": "./index.html"
+        
+    },
+    {
+        "name": "About",
+        "url": "./about.html"
+        
+    },
+    {
+        "name": "Gallery",
+        "url": "./gallery.html"
+        
+    },
+    {
+        "name": "Contact Us",
+        "url": "./contact.html"
+        
+    }
+]

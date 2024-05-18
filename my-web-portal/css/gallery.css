@@ -1,6 +1,6 @@
 body {
 
-    background: linear-gradient(to top, rgba(205, 27, 26, 0.4), rgba(205, 27, 26, 0.7)), url('../resources/gallery.jpg') top center;
+    background: linear-gradient(to top, rgba(205, 27, 26, 0.4), rgba(205, 27, 26, 0.7)), url('../resources/images/gallery.jpg') top center;
     background-size: 100% 100%;
 
 }
