@@ -1,5 +1,38 @@
 [
     {
-        
+        "image": "../resources/images/1.jpg",
+        "title": "concert",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente placeat facere distinctio,quis voluptatum incidunt ipsa esse quo beatae lorem"
+    },
+    {
+        "image": "../resources/images/2.jpg",
+        "title": "rock",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente placeat facere distinctio,quis voluptatum incidunt ipsa esse quo beatae lorem"
+    },
+    {
+        "image": "../resources/images/3.jpg",
+        "title": "instrumental",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente placeat facere distinctio,quis voluptatum incidunt ipsa esse quo beatae lorem"
+    },
+    {
+        "image": "../resources/images/4.jpg",
+        "title": "musical orchestra",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente placeat facere distinctio,quis voluptatum incidunt ipsa esse quo beatae lorem"
+    },
+
+    {
+        "image": "../resources/images/5.jpg",
+        "title": "classical",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente placeat facere distinctio,quis voluptatum incidunt ipsa esse quo beatae lorem"
+    },
+    {
+        "image": "../resources/images/1.jpg",
+        "title": "musical theatre",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente placeat facere distinctio,quis voluptatum incidunt ipsa esse quo beatae lorem"
+    },
+    {
+        "image": "../resources/images/2.jpg",
+        "title": "jazz",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente placeat facere distinctio,quis voluptatum incidunt ipsa esse quo beatae lorem"
     }
 ]

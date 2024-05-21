@@ -1,19 +1,19 @@
 const header= document.getElementById('header');
 
-const menu_url = "http://127.0.0.1:5500/web-assignment-stehnanie/my-web-portal/resources/data/menu.json"
+const menuUrl = "http://127.0.0.1:5500/web-assignment-stehnanie/my-web-portal/resources/data/menu.json"
 
-fetch_menu();
+fetchMenu();
 
 /* 
 *This method fetches the menu items as a json and resolve them from promise
 * The mentod utilises arrow notation on the else block
 */
-function fetch_menu(){
+function fetchMenu(){
 
-    fetch(menu_url).then( response=> response.json())
+    fetch(menuUrl).then( response=> response.json())
                 .then(menuItems=> {
 
-                    append_menu_item(menuItems);
+                    appendMenuItem(menuItems);
                     
                 });
 }
@@ -22,7 +22,7 @@ function fetch_menu(){
 /* 
 *This method uses a forEach loop to create each menu item 
 */
-function append_menu_item(menuItems){
+function appendMenuItem(menuItems){
 
     menuItems.forEach(element => {
 

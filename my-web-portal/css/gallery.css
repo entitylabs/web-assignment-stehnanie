@@ -5,7 +5,7 @@ body {
 
 }
 
-.gallery-container {
+#gallery-container {
 
     display: flex;
     flex-direction: row;
@@ -31,6 +31,7 @@ body {
     color: grey;
     font-size: 1.25rem;
     padding: 0.25rem;
+    text-transform: capitalize;
 }
 
 .card-image {
