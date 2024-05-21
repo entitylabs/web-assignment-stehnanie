@@ -20,17 +20,16 @@ function onSubmit() {
 }
 
 
-function onvalidFormSubmission(isFormValid, nameElement, phoneElement, messageElement) {
+// use of rest operator
+function onvalidFormSubmission(isFormValid, ...fields) {
 
 
     if (isFormValid) {
 
-        // clear fields
-        nameElement.value = '';
-
-        phoneElement.value = '';
-
-        messageElement.value = '';
+        //clear fields
+        fields.forEach(field=> {
+            fields.value = '';
+        })
 
         // set success label
         const infoField = document.getElementById('info_label');

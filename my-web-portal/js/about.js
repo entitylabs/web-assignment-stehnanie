@@ -29,6 +29,7 @@ async function renderAbout() {
 
     addStyleToFirstParagraph()
 
+    // Usage of spread operators to collect all hashtags from two different sources
     const allTags = [...results[0].tags, ...results[1].additionaltags];
 
     addAboutTags(allTags);
