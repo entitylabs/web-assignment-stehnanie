@@ -71,3 +71,26 @@ function validateField(field) {
     return true;
 
 }
+
+
+function goToURLInNewtab(location){
+
+    switch(location) {
+
+        case 'instagram': {
+            window.open("https://www.instagram.com/");
+            break;
+        }
+
+        case 'facebook': {
+            window.open("https://www.facebook.com/");
+            break;
+        }
+
+        case 'linkedin': {
+            window.open("https://www.linkedin.com/");
+            break;
+        }
+    }
+ 
+}
