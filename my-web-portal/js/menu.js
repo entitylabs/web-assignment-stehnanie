@@ -33,6 +33,5 @@ function appendMenuItem(menuItems){
         menuItem.setAttribute('class', 'menu-item');
                        
     });
-
    
 }

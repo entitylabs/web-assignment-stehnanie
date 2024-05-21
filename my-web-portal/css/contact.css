@@ -36,6 +36,7 @@ textarea {
 
 }
 
+
 input[type=submit] {
 
     background-color: white;
@@ -54,8 +55,18 @@ input[type=submit]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    animation: container 4s alternate;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.25rem;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
+
+
+@keyframes container  {
+    from {border-color: rgba(255, 0, 0, 0.495);}
+    to {border-color: rgba(255, 68, 0, 0.446); box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+  }
 
 #facebook {
 
