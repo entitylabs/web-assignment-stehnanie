@@ -28,7 +28,7 @@ function onvalidFormSubmission(isFormValid, ...fields) {
 
         //clear fields
         fields.forEach(field=> {
-            fields.value = '';
+            field.value = '';
         })
 
         // set success label
