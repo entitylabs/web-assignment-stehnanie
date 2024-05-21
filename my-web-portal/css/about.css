@@ -16,7 +16,7 @@ body {
 
 }
 
-p[class="first"]::first-letter{
+p[class="first"]::first-letter {
     font-size: 2rem;
     color: red;
 }
@@ -25,11 +25,39 @@ p[class="first"]::first-letter{
 
     margin: 0.25rem;
     min-width: 25rem;
-    width:25rem;
+    width: 25rem;
 
 }
 
-#about-image, #about-me {
-    
+#about-image,
+#about-me {
+
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.hashtag {
+
+    color: red;
+    padding: 0.25rem;
+    text-transform: lowercase;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgba(255, 0, 0, 0.15);
+    margin: 0.5rem 0.25rem 0.25rem 0rem;
+    border-radius: 5px;
+}
+
+.hashtag:hover {
+
+    color:purple;
+    background-color: rgba(128, 0, 128, 0.194);
+    font-size: 1.05rem;
+}
+
+
+.hashtag-container {
+
+    margin-top: 2rem;
+    text-indent: 0.25rem;
 }

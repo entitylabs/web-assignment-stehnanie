@@ -1,26 +1,41 @@
 
-const aboutUrl = "http://127.0.0.1:5500/web-assignment-stehnanie/my-web-portal/resources/data/about.json"
+const aboutUrl = "http://127.0.0.1:5500/web-assignment-stehnanie/my-web-portal/resources/data/about.json";
 
-fetchAbout();
+const additionalTagsUrl = "http://127.0.0.1:5500/web-assignment-stehnanie/my-web-portal/resources/data/tags.json";
+
+const aboutPromise = fetchAbout();
 
 function fetchAbout() {
 
-    fetch(aboutUrl).then(response => response.json())
-        .then(about => {
+    return fetch(aboutUrl).then(response => response.json());
+}
 
-            addAboutDetails(about);
+const additionaltags = fetchAdditionalTags();
 
-            addAboutParagraphs(about);
+function fetchAdditionalTags() {
 
-            addStyleToFirstParagraph()
+    return fetch(additionalTagsUrl).then(response => response.json());
+}
 
-        });
+renderAbout();
+
+async function renderAbout() {
+
+    let results = await Promise.all([aboutPromise, additionaltags]);
+
+    addAboutDetails(results[0]);
+
+    addAboutParagraphs(results[0]);
+
+    addStyleToFirstParagraph()
+
+    const allTags = [...results[0].tags, ...results[1].additionaltags];
+
+    addAboutTags(allTags);
+
 }
 
 
-/* 
-*This method uses a forEach loop to create each menu item 
-*/
 function addAboutDetails(about) {
 
     addAboutImage(about);
@@ -71,6 +86,32 @@ function addStyleToFirstParagraph() {
             count++;
         }
     })
+
+
+}
+
+
+function addAboutTags(tags){
+
+    const aboutBody = document.getElementById('about-me');
+
+    const hashTagBody = document.createElement('div');
+
+    hashTagBody.setAttribute('class','hashtag-container')
+
+    tags.forEach(tag => {
+
+        const label= document.createElement('label');
+        
+        label.innerText='#'+tag;
+        
+        label.setAttribute('class', 'hashtag');
+        
+        hashTagBody.appendChild(label);
+
+    });
+
+    aboutBody.appendChild(hashTagBody);
 
 
 }
