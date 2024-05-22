@@ -6,7 +6,7 @@ fetchMenu();
 
 /* 
 *This method fetches the menu items as a json and resolve them from promise
-* The mentod utilises arrow notation on the else block
+* The mentod utilises arrow notation
 */
 function fetchMenu(){
 

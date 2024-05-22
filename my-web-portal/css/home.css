@@ -7,7 +7,9 @@ body {
 }
 
 .body {
-    justify-content: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: right;
 }
 
@@ -19,7 +21,14 @@ body {
     text-shadow: red 1px 0 10px;
     padding: 10rem;
     font-family: "Sofia", sans-serif;
-    max-width: 30rem;
     text-transform: capitalize;
+    text-align: right;
+
+   }
+
+   .quotes-container{
+    
+    color:white;
+    font-family: "Sofia", sans-serif;
 
    }
