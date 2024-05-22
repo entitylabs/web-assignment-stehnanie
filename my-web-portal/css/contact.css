@@ -55,7 +55,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: container 4s alternate;
+    animation: container 4s 2s infinite;
     border: 1px solid white;
     border-radius: 5px;
     padding: 0.25rem;
@@ -63,10 +63,17 @@ input[type=submit]:hover {
 }
 
 
-@keyframes container  {
-    from {border-color: rgba(255, 0, 0, 0.495);}
-    to {border-color: rgba(255, 68, 0, 0.446); box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
-  }
+@keyframes container {
+    from {
+        border-color: rgba(255, 0, 0, 0.495);
+        box-shadow: rgba(122, 122, 143, 0.2) 0px 7px 29px 0px;
+    }
+
+    to {
+        border-color: rgba(0, 38, 255, 0.353);
+        box-shadow: rgba(122, 122, 143, 0.2) 0px 7px 29px 0px;
+    }
+}
 
 #facebook {
 
@@ -115,9 +122,9 @@ input[type=submit]:hover {
 
 #info_label {
 
-    padding-left:  1rem;
+    padding-left: 1rem;
 }
 
 #submit {
-    padding:0.25rem 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
