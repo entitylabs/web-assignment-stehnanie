@@ -14,7 +14,6 @@ body {
     justify-content: center;
     align-content: center;
     height: calc(100vh - 5rem);
-
 }
 
 input[type=text],
@@ -41,14 +40,12 @@ input[type=submit] {
 
     background-color: white;
     padding: 5px;
-    border: 1px solid lightgray;
 }
 
 input[type=submit]:hover {
 
     background-color: lightgray;
     padding: 5px;
-    border: 1px solid lightgray;
 }
 
 .icons_container {
@@ -59,7 +56,6 @@ input[type=submit]:hover {
     border: 1px solid white;
     border-radius: 5px;
     padding: 0.25rem;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 
