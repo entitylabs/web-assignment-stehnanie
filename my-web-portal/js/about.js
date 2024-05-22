@@ -1,4 +1,9 @@
 
+// The background detail div is hidden until api fetches data
+const aboutMeElement=document.getElementById('about-me');
+
+aboutMeElement.setAttribute('hidden', true);
+
 const aboutUrl = "http://127.0.0.1:5500/web-assignment-stehnanie/my-web-portal/resources/data/about.json";
 
 const additionalTagsUrl = "http://127.0.0.1:5500/web-assignment-stehnanie/my-web-portal/resources/data/tags.json";
@@ -33,6 +38,9 @@ async function renderAbout() {
     const allTags = [...results[0].tags, ...results[1].additionaltags];
 
     addAboutTags(allTags);
+
+    // Show div only when the data is loaded
+    aboutMeElement.removeAttribute('hidden');
 
 }
 
