@@ -1,6 +1,6 @@
 
 // The background detail div is hidden until api fetches data
-const aboutMeElement = document.getElementById('about-me');
+const aboutMeElement=document.getElementById('about-me');
 
 aboutMeElement.setAttribute('hidden', true);
 
@@ -39,7 +39,6 @@ async function renderAbout() {
 
     addAboutTags(allTags);
 
-    // Show div only when the data is loaded
     aboutMeElement.removeAttribute('hidden');
 
 }
@@ -100,22 +99,22 @@ function addStyleToFirstParagraph() {
 }
 
 
-function addAboutTags(tags) {
+function addAboutTags(tags){
 
     const aboutBody = document.getElementById('about-me');
 
     const hashTagBody = document.createElement('div');
 
-    hashTagBody.setAttribute('class', 'hashtag-container')
+    hashTagBody.setAttribute('class','hashtag-container')
 
     tags.forEach(tag => {
 
-        const label = document.createElement('label');
-
-        label.innerText = '#' + tag;
-
+        const label= document.createElement('label');
+        
+        label.innerText='#'+tag;
+        
         label.setAttribute('class', 'hashtag');
-
+        
         hashTagBody.appendChild(label);
 
     });

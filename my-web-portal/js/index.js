@@ -40,7 +40,7 @@ function fetchQuotes() {
 
             }).then(quote=> renderRandomQuote());
     }else {
-        renderRandomQuote();
+
     }
 }
 
